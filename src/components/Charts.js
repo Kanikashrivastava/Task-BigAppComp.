@@ -1,7 +1,6 @@
 import React , { Component} from  'react';
 import DemographicsData from './demographics';
-import InsetDividers from './demographics'
-import DevicesData from './devices';
+import InsetDividers from './sidedataDevices';
 import NewUserData from './newUsers';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -26,7 +25,7 @@ function Charts(props) {
         <div className={classes.root}>
         <Card className={classes.card}>
             <CardContent>
-                <DevicesData/>
+                <InsetDividers/>
             </CardContent>
         </Card>
         <Card className={classes.card}>
