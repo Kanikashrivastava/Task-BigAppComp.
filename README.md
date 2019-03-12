@@ -1,6 +1,6 @@
 # Installations
 
-`clone it`
+`clone it` <br>
 git clone https://github.com/Kanikashrivastava/Task-bigAppComp..git
 
 `npm run dev`
