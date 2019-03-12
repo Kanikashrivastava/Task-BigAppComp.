@@ -18,9 +18,6 @@ const styles = theme => ({
   left: {
       float:'left',
       marginRight: 10
-  },
-  head: {
-    // width: '100%'
   }
 });
 
@@ -45,11 +42,7 @@ export class DevicesData extends Component {
                             
                         ]
                     }
-                ],
-                text: '9,204',
-                color: [
-                    'black',
-                ]                
+                ]               
             }
         };
     };
@@ -71,8 +64,7 @@ export class DevicesData extends Component {
                 <Doughnut
                     data={this.state.ChartData}
                     options={{
-                        maintainAspectRatio: false,
-                        text: 'Desktop'
+                        maintainAspectRatio: false
                     }}
                 />
             </div>

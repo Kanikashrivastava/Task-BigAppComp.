@@ -880,8 +880,6 @@ var styles = function styles(theme) {
     left: {
       float: 'left',
       marginRight: 10
-    },
-    head: {// width: '100%'
     }
   };
 };
@@ -904,9 +902,7 @@ function (_Component) {
           label: 'Population',
           data: [23, 33, 44],
           backgroundColor: ['#ce2e2e', '#f11ac2ba', 'skyblue']
-        }],
-        text: '9,204',
-        color: ['black']
+        }]
       }
     };
     return _this;
@@ -920,48 +916,48 @@ function (_Component) {
         className: "Chart-Bar",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: classes.head,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 54
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["Typography"], {
         className: classes.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 55
         },
         __self: this
       }, "Devices"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: classes.age,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 56
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["Typography"], {
         className: classes.left,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 57
         },
         __self: this
       }, "Overview"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_9___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("path", {
         d: "M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 59
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
@@ -969,18 +965,17 @@ function (_Component) {
         src: "https://img.icons8.com/material-outlined/24/000000/more.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 61
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__["Doughnut"], {
         data: this.state.ChartData,
         options: {
-          maintainAspectRatio: false,
-          text: 'Desktop'
+          maintainAspectRatio: false
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 64
         },
         __self: this
       }));
@@ -1194,24 +1189,6 @@ var styles = function styles(theme) {
   };
 };
 
-var originalDoughnutDraw = Chart.controllers.doughnut.prototype.draw;
-Chart.helpers.extend(Chart.controllers.doughnut.prototype, {
-  draw: function draw() {
-    originalDoughnutDraw.apply(this, arguments);
-    var chart = this.chart.chart;
-    var ctx = chart.ctx;
-    var width = chart.width;
-    var height = chart.height;
-    var fontSize = (height / 114).toFixed(2);
-    ctx.font = fontSize + "em Verdana";
-    ctx.textBaseline = "middle";
-    var text = chart.config.data.text,
-        textX = Math.round((width - ctx.measureText(text).width) / 2),
-        textY = height / 2;
-    ctx.fillText(text, textX, textY);
-  }
-});
-
 var NewUserData =
 /*#__PURE__*/
 function (_Component) {
@@ -1230,8 +1207,7 @@ function (_Component) {
           label: 'Population',
           data: [9.43, 6.43],
           backgroundColor: ['grey', '#ce2e2e']
-        }],
-        text: '587'
+        }]
       }
     };
     return _this;
@@ -1245,53 +1221,53 @@ function (_Component) {
         className: classes.Doughnut,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 64
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 65
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Typography"], {
         className: classes.title,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 67
         },
         __self: this
       }, "New users")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: classes.age,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 69
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["Typography"], {
         className: classes.left,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 70
         },
         __self: this
       }, "Last 30 days."), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_SvgIcon__WEBPACK_IMPORTED_MODULE_14___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 71
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("path", {
         d: "M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 72
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
@@ -1299,7 +1275,7 @@ function (_Component) {
         src: "https://img.icons8.com/material-outlined/24/000000/more.png",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 74
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__["Doughnut"], {
@@ -1311,33 +1287,33 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 77
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 108
+          lineNumber: 86
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: classes.userRatio,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 87
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8___default.a, {
         className: classes.root,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 88
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 89
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1345,25 +1321,25 @@ function (_Component) {
         secondary: "New users Growth",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112
+          lineNumber: 90
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 114
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_7___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 93
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10___default.a, {
@@ -1371,7 +1347,7 @@ function (_Component) {
         secondary: "Conversion Rate",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 96
         },
         __self: this
       })))));
